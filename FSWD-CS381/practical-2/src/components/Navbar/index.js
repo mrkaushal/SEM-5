@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../../images/logo.svg';
+
 import {
   Nav,
   NavLink,
@@ -13,17 +15,14 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink to='/'>
-          <img src={require('../../images/logo.svg')} alt='logo' />
+          <img src={logo} alt='logo' />
         </NavLink>
         <Bars />
         <NavMenu>
           <NavLink to='/about' activeStyle>
             About
           </NavLink>
-          <NavLink to='/services' activeStyle>
-            Services
-          </NavLink>
-          <NavLink to='/contact-us' activeStyle>
+          <NavLink to='/contact' activeStyle>
             Contact Us
           </NavLink>
           <NavLink to='/sign-up' activeStyle>

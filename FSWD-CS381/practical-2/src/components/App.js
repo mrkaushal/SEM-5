@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import logo from '../images/logo.svg';
 import Navbar from './Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -9,7 +10,8 @@ import Contact from './Contact/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
       <Navbar />
       <Routes>
           <Route exact path="/" element={<Home/>}/>
@@ -17,6 +19,15 @@ function App() {
           <Route exact path="/contact" element={<Contact/>}/>
         </Routes>
     </BrowserRouter>
+
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+      </header>
+    </div>
+
   );
 }
 
