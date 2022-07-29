@@ -1,2 +1,1 @@
-
 likes(john,mary).
