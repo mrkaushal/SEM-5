@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/Klogo.png';
+import logo from '../../assets/images/Klogo.png';
 
 import {
   Nav,

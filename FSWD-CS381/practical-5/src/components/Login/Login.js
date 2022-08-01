@@ -1,78 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
+import homepage from '../../assests/images/homepage.webp';
 
-import { 
-  makeStyles, 
-  Container, 
-  Card, 
-  TextField, 
-  Button 
-} from '@material-ui/core';
+const Auth = ({ children }) => {
+    return (
+        <div className="w-full h-full">
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: theme.spacing(2),
+            <div className="flex w-full h-screen md:w-2/3 py-8 mx-auto">
 
-    '& .MuiTextField-root': {
-      margin: theme.spacing(1),
-      width: '300px',
-    },
-    '& .MuiButtonBase-root': {
-      margin: theme.spacing(2),
-    },
-  },
-}));
+                <div className="hidden md:block bg-[url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png')] my-10 h-full bg-no-repeat">
+                    <img draggable="false" className="mr-[80px] mt-[1.8rem] ml-[155px]" src={homepage} alt="homepage" />
+                </div>
 
-const Login = ({ handleClose }) => {
-  const classes = useStyles();
-  // create state variables for each input
-  const [username, setFirstName] = useState('');
-  const [password, setPassword] = useState('');
+                <div className="flex flex-col gap-3 w-full md:w-2/5">
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log(username, password);
-    handleClose();
-  };
+                    {children}
 
-  return (
-    <Container maxWidth="sm">
-      <Card variant="outlined">
-        <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="logo" />
-        <form className={classes.root} onSubmit={handleSubmit}>
-          <TextField
-            label="Phone number, username, or email"
-            variant="filled"
-            required
-            value={username}
-            onChange={e => setFirstName(e.target.value)}
-          />
-          <TextField
-            label="Password"
-            variant="filled"
-            type="password"
-            required
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-          />
-          <div>
-            <Button type="submit" variant="contained" color="primary">
-              Login
-            </Button>
-          </div>
-        </form>
-      </Card>
-      <br />
-      <Card variant="outlined">
-        <div>
-          Don't have an account? <a href="https://google.com">Sign up</a>
+                    <p className="text-center text-sm my-2">Get the app.</p>
+                    <div className="flex gap-3 justify-center" >
+                        <img draggable="false" width="130px" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="appstore" />
+                        <img draggable="false" width="130px" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="playstore" />
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </Card>
-    </Container>
-  );
-};
+    )
+}
 
-export default Login;
+export default Auth
