@@ -16,12 +16,8 @@ function App() {
         <Header />
         
         <Routes>
-          <Route path="/search">
-            <SearchPage />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route exact path="/search" element={<SearchPage/>}/>
+          <Route exact path="/" element={<Home/>}/>
         </Routes>
         
         <Footer />
