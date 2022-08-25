@@ -19,4 +19,3 @@
   - Practical 4
   - Practical 5
   - Airbnb Clone [Working]
->>>>>>> f95753d4e1aecd0af76823dd02fdc188fb169e03
