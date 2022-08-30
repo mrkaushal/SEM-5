@@ -3,5 +3,5 @@ using namespace std;
 
 void SayHi()
 {
-cout << "Hello World, from srcmake (from another file)" << endl;
+  cout << "Hello World, from SayHi (from another file)" << endl;
 }
