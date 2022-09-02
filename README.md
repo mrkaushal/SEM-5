@@ -5,9 +5,10 @@
 
 ## 2. Design and Anaalysis of Algorithm - CS358
   - Practical 1 
-  - Practical 2 [2.1]
-  - Practical 3 [3.2]
-  - Practical 4 [4.2, 4.3]
+  - Practical 2 (2.1)
+  - Practical 3 (3.2)
+  - Practical 4 (4.2, 4.3)
+  - Practical 5 (5.1)
 ## 3. Full Stack Web Development - CS381
   - Practical 1 [🔗](https://github.com/mrkaushal/SEM-5/tree/main/FSWD-CS381/practical-1)
   - Practical 2 [🔗](https://github.com/mrkaushal/SEM-5/tree/main/FSWD-CS381/practical-2)
