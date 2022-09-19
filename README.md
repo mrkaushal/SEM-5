@@ -1,7 +1,13 @@
 # SEM-5
 
 ## 1. Artificial Intelligence - CS314
-  - Monkey Banana Problem
+  - Practical 1 (Python)
+  - Practical 2 (Python)
+  - Practical 3 (Python)
+  - Practical 4 (Python)
+  - Practical 5 (Python)
+  - Practical 6 (Python)
+  - Monkey Banana Problem (Prolog)
 
 ## 2. Design and Anaalysis of Algorithm - CS358
   - Practical 1 
